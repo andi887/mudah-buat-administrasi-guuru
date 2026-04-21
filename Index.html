@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <!-- Hubungkan ke CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Selamat Datang di Portal Pendidikan</h1>
+    <nav>
+      <a href="#login">Login</a>
+      <a href="#daftar">Daftar</a>
+      <a href="#layanan">Layanan</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Bagian Login -->
+    <section id="login">
+      <h2>Login</h2>
+      <form onsubmit="return handleLogin(event)">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Masuk</button>
+      </form>
+    </section>
+
+    <!-- Bagian Daftar -->
+    <section id="daftar">
+      <h2>Daftar Akun Baru</h2>
+      <form>
+        <label for="newuser">Username:</label>
+        <input type="text" id="newuser" required>
+        <label for="newpass">Password:</label>
+        <input type="password" id="newpass" required>
+        <button type="submit">Daftar</button>
+      </form>
+    </section>
+
+    <!-- Bagian Layanan -->
+    <section id="layanan">
+      <h2>Layanan Kami</h2>
+      <p>Portal administrasi untuk berbagai jenjang pendidikan.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Portal Pendidikan</p>
+  </footer>
+
+  <!-- Hubungkan ke JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
